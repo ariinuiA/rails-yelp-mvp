@@ -30,12 +30,14 @@
     </div>
   </div>
 
-  <div>
+  <div class="card mt-2">
+    <h2>Leave a review</h2>
+    <%= render "/reviews/form_review", review: @review %>
+  </div>
+
+  <div class="mb-4">
     <%= link_to restaurants_path, class: "text-decoration-none" do %>
       <i class="fa-solid fa-arrow-left"></i> Go back
-    <% end %> |
-    <%= link_to new_restaurant_review_path(@restaurant), class: "text-decoration-none" do %>
-      Leave a review <i class="fa-solid fa-arrow-right"></i>
     <% end %>
   </div>
   <%# <%= render "form", restaurants: @restaurant %>
