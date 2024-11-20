@@ -1,0 +1,8 @@
+<%= simple_form_for @restaurant do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :phone_number %>
+  <%= f.label "Category: [chinese italian japanese french belgian]" %>
+  <%= f.input :category %>
+  <%= f.submit class: "btn btn-primary" %>
+<% end %>
